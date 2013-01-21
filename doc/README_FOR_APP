@@ -1,2 +1,4 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+Indexes and searches information in National Stock Number Extract
+https://explore.data.gov/Business-Enterprise/GSA-eLibrary-Schedules-and-Contracts/c9i4-xfk8
+
+Used as a demo of PostgreSQL's full-text search facility
