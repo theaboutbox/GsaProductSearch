@@ -17,4 +17,5 @@ end
 gem 'jquery-rails'
 gem 'haml'
 gem 'money-rails'
-gem 'texticle', "2.0", :require => 'texticle/rails'
+gem 'texticle', :require => 'texticle/rails'
+gem 'rabl'

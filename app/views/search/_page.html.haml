@@ -1,0 +1,7 @@
+#ng-app{'ng-app' => ''}
+  = render :partial => 'form'
+  - if @results.present?
+    %h3 #{pluralize(@results.count,'result')} for #{@query}
+    %ul
+      = render partial: 'search/product', collection: @results
+

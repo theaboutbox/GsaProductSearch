@@ -1,6 +1,10 @@
 require 'csv'
+require 'texticle/searchable'
 
 class Product < ActiveRecord::Base
+  # Only search name and description
+  extend Searchable(:name, :description)
+
   monetize :price_cents
 
   # Import a csv file living at the specified path

@@ -1,0 +1,5 @@
+%h1 Super GSA Search
+%form{method: 'GET', action: search_path}
+  %label{for: :query} Product to find
+  %input{name: :query, id: :query, type: :text}
+  %input{type: :submit, name: :search, value: 'Search!'}

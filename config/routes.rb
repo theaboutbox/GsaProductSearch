@@ -1,5 +1,6 @@
 GsaProductSearch::Application.routes.draw do
 
+  resource :search, controller: :search
   root to: 'search#index'
 
   # The priority is based upon order of creation:
