@@ -1,0 +1,14 @@
+#ng-app{'ng-app' => ''}
+  %h1 Super GSA Search
+  %form{method: 'GET'}
+    %label{for: :query} Product to find
+    %input{name: :query, id: :query, type: :text}
+    %input{type: :submit, name: :search, value: 'Search!'}
+  - if @results.present?
+    %h3 #{pluralize(@results.count,'result')} for #{@query}
+    %ul
+      - @results.each do |result|
+        %li
+          = result.name
+          -
+          = result.description
