@@ -5,7 +5,7 @@ class SearchController < ApplicationController
   def show
     if params[:query].present?
       @query = params[:query]
-      @results = Product.basic_search(@query)
+      @results = Product.basic_search(@query).order('price_cents asc')
     end
   end
 end
